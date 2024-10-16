@@ -1,0 +1,64 @@
+#navbarNavAltMarkup{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.image-container {
+    position: relative;
+  }
+  
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 30px;
+}
+.adjust{
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%; 
+    -webkit-filter: blur(2px);
+    object-fit: cover;
+    -ms-filter: blur(5px);
+    filter: blur(5px)
+   }
+
+#produit .card {
+    width: 25rem !important;
+}
+
+ @media (max-width: 768px) {
+    #navbarNavAltMarkup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-nav a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .image-text {
+        font-size: 20px;
+    }
+
+    .adjust {
+        height: 50vh; /* Réduire la hauteur de l'image sur petits écrans */
+    }
+}
+
+/* --- Media query pour les très petits écrans (576px ou moins) --- */
+@media (max-width: 576px) {
+    .card {
+        width: 100%; 
+        margin-bottom: 15px;
+    }
+}
